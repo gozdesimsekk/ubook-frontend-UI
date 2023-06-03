@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ubook</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="https://kit.fontawesome.com/358e6f0c2b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<img class="wave" src="img/Vector.svg">
+	<div class="container">
+
+		<div class="img">
+			<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+<lottie-player src="https://assets6.lottiefiles.com/private_files/lf30_TBKozE.json"   background="transparent"  speed="1"  style="width: 600px; height: 600px;" loop  autoplay></lottie-player>
+		</div>
+		<div class="login-content">
+			<form action="#">
+				<img src="img/ubook.png">
+				<h2 class="title">Welcome to Ubook!</h2>
+				
+				<div class="gmailandface">
+					<button class="gmail"> <img src="./img/gmail.svg"  alt="*" id="google_icon"> Login with Google</button>
+					<button class="gmail"> <img src="./img/facebook.svg"  alt="*" id="google_icon">Login with Facebook</button>
+					</div>
+<div class="form"> 
+           		<div class="input-div one">
+           		   <div class="i">
+           		   		<i class="fas fa-user"></i>
+           		   </div>
+           		   <div class="div">
+           		   		<h5>Email</h5>
+           		   		<input type="text" class="input">
+						
+           		   </div>
+           		</div>
+				
+           		<div class="input-div pass">
+           		   <div class="i">
+           		    	<i class="fas fa-lock"></i>
+           		   </div>
+           		   <div class="div">
+           		    	<h5>Password</h5>
+           		    	<input type="password" required="" id="password" class="input">
+						
+						   <span class="show-btn">
+							<i class="far fa-eye"></i>
+						   </span>
+						   <script>
+							const password = document.querySelector("#password");
+							const showpassword = document.querySelector("span i");
+							showpassword.onclick = (() => {
+							if (password.type === "password") {
+							password.type = "text";
+							showpassword.classList.add("hide-btn");
+							} else {
+							password.type = "password";
+							showpassword.classList.remove("hide-btn");
+							}
+							});
+							</script>
+            	   </div>
+				</div>
+            	</div>
+				<div class="textbuttons">
+				<a href="signup.html">Don't you have an account?  Sign up!</a>
+				
+            	<a href="forgot.html">Forgot Password? </a>
+				
+				</div>
+				
+            	<input type="submit" class="btn" value="Login">
+				
+            </form>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/main.js"></script>
+	
+</body>
+</html>
